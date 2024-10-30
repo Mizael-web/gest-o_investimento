@@ -5,12 +5,12 @@ function editarInvestimento (id,novotipoInvestimento, novovalorInicial,novovalor
         const investimentos = investimento.find (elementodoarray => 
          elementodoarray.id === id
     )
-        if (investimento){
-            investimento.tipoInvestimento = novotipoInvestimento,
-            investimento.valorInicial =novovalorInicial,
-            investimento.valorAtual = novovalorAtual,
-            investimento.dataInvestimento = novodataInvestimento,
-            investimento.nivelRisco = novonivelRisco
+        if (investimentos){
+            investimentos.tipoInvestimento = novotipoInvestimento,
+            investimentos.valorInicial =novovalorInicial,
+            investimentos.valorAtual = novovalorAtual,
+            investimentos.dataInvestimento = novodataInvestimento,
+            investimentos.nivelRisco = novonivelRisco
 
             console.log (" Investimento editado com sucesso" )
         }else {
